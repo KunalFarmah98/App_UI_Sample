@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_wallet"
+        android:icon="@drawable/ic_account_balance_wallet_white_24dp"
+        android:title="@string/title_home"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/navigation_trophy"
+        android:icon="@drawable/trophy"
+        android:title="Tests"
+        app:showAsAction="always"/>
+
+</menu>
