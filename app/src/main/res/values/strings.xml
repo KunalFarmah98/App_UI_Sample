@@ -9,5 +9,8 @@
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
+    <string name="trial1">Your free trial expired on </string>
+    <string name="trialdate">26th Jan 2019</string>
+    <string name="trial2">please updgrade now to get full access</string>
     <string name="action_settings">Settings</string>
 </resources>

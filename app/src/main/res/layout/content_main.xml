@@ -1,11 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
+    android:background="#d8d8d8"
     tools:showIn="@layout/app_bar_main">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+       android:background="@drawable/banner"/>
+
+    <RelativeLayout
+        android:background="@drawable/rounded_corner"
+        android:id="@+id/upgrade"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/banner"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/gift"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gift"/>
+        <TextView
+            android:layout_alignBaseline="@id/gift"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/gift"
+            android:layout_gravity="center"
+            android:id="@+id/trial1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="@string/trial1"/>
+        <TextView
+            android:layout_toRightOf="@+id/trial1"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/trialdate"/>
+        <TextView
+            android:id="@+id/trial2"
+            android:layout_toRightOf="@+id/gift"
+            android:layout_below="@+id/trial1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/trial2"/>
+
+        <Button
+            android:id="@+id/upgradenow"
+            android:layout_below="@id/gift"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#05ba3f"
+            android:padding="5dp"
+            android:layout_height="30dp"
+            android:textColor="#ffffff"
+            android:text="Upgrade Now"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
