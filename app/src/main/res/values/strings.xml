@@ -11,6 +11,6 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="trial1">Your free trial expired on </string>
     <string name="trialdate">26th Jan 2019</string>
-    <string name="trial2">please updgrade now to get full access</string>
+    <string name="trial2">please upgrade now to get full access.</string>
     <string name="action_settings">Settings</string>
 </resources>
