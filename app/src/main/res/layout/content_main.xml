@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
-    android:background="#d8d8d8"
+    android:background="#ebeef4"
     tools:showIn="@layout/app_bar_main">
 
     <ImageView
@@ -81,6 +81,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Subjects"
+        android:textStyle="bold"
         android:paddingLeft="20dp"
         android:textSize="16sp"
         android:paddingTop="10dp"
@@ -93,8 +94,10 @@
 
         <android.support.v7.widget.RecyclerView
             android:background="#ffffff"
-            android:padding="10dp"
-            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginBottom="56dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:id="@+id/subjects"

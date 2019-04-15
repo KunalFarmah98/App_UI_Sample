@@ -44,8 +44,9 @@
             android:gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
-            android:textSize="16sp"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Display2"
             android:layout_gravity="left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -71,12 +72,13 @@
                 android:text="Progress"/>
 
             <ProgressBar
+                android:id="@+id/pb"
                 android:layout_weight="2"
                 android:gravity="right"
                 android:layout_width="0dp"
-                android:outlineAmbientShadowColor="@color/colorPrimary"
                 android:layout_marginRight="5dp"
-                android:backgroundTint="@color/colorPrimary"
+                android:progressTint="@color/colorPrimaryDark"
+                android:progressBackgroundTint="@color/colorPrimary"
                 android:layout_height="wrap_content"
                 style="@style/Widget.AppCompat.ProgressBar.Horizontal"
                 />

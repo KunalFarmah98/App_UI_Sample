@@ -4,24 +4,24 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home_white_24dp"
-        android:title="@string/title_home" />
+        android:title="HOME" />
 
     <item
         android:id="@+id/navigation_tests"
         android:icon="@drawable/ic_content_copy_white_24dp"
-        android:title="Tests" />
+        android:title="TESTS" />
 
     <item
         android:id="@+id/navigation_analysis"
         android:icon="@drawable/ic_graphic_eq_white_24dp"
-        android:title="Analysis" />
+        android:title="ANALYSIS" />
     <item
         android:id="@+id/navigation_doubts"
         android:icon="@drawable/ic_chat_white_24dp"
-        android:title="Doubts" />
+        android:title="DOUBTS" />
     <item
         android:id="@+id/navigation_profile"
         android:icon="@drawable/ic_person_white_24dp"
-        android:title="Profile" />
+        android:title="PROFILE" />
 
 </menu>
