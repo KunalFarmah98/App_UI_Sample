@@ -1,6 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="2dp"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="5dp">
+
+        <RelativeLayout
+    android:padding="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    >
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/mat"/>
+
+    <LinearLayout
+        android:layout_alignBaseline="@+id/img"
+        android:layout_toRightOf="@+id/img"
+        android:id="@+id/l1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/name"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mental Ability"/>
+        
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:id="@+id/l2"
+            android:weightSum="3"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/progress"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:layout_width="0dp"
+                android:textSize="13sp"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content"
+                android:text="Progress"/>
+
+            <ProgressBar
+                android:layout_weight="2"
+                android:gravity="right"
+                android:layout_width="0dp"
+                android:outlineAmbientShadowColor="@color/colorPrimary"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                />
+
+            <TextView
+                android:id="@+id/percent"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="prec %"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

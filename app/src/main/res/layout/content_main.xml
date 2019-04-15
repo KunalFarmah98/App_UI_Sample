@@ -19,7 +19,10 @@
     <RelativeLayout
         android:background="@drawable/rounded_corner"
         android:id="@+id/upgrade"
-        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_below="@+id/banner"
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -33,7 +36,7 @@
             android:background="@drawable/gift"/>
         <TextView
             android:layout_alignBaseline="@id/gift"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:layout_toRightOf="@+id/gift"
             android:layout_gravity="center"
             android:id="@+id/trial1"
@@ -44,10 +47,10 @@
         <TextView
             android:layout_toRightOf="@+id/trial1"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colorPrimaryDark"
             android:text="@string/trialdate"/>
         <TextView
             android:id="@+id/trial2"
@@ -59,21 +62,46 @@
             android:text="@string/trial2"/>
 
         <Button
+
             android:id="@+id/upgradenow"
             android:layout_below="@id/gift"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="5dp"
+            android:layout_marginBottom="10dp"
             android:layout_width="match_parent"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:background="#05ba3f"
-            android:padding="5dp"
+            android:background="@drawable/rounded_button"
             android:layout_height="30dp"
             android:textColor="#ffffff"
             android:text="Upgrade Now"/>
-
-
-
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subjects"
+        android:paddingLeft="20dp"
+        android:textSize="16sp"
+        android:paddingTop="10dp"
+        android:background="#ffffff"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@id/upgrade"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:background="#ffffff"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/subjects"
+            android:layout_below="@id/sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
 
 </RelativeLayout>
